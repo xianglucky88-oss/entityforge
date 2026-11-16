@@ -1,0 +1,5 @@
+[
+  {"source":"crm","id":"c-1","fields":{"name":"Alice Zhang","email":"alice@example.test","city":"Shanghai"}},
+  {"source":"support","id":"s-9","fields":{"name":"ALICE ZHANG","email":" Alice@Example.test ","phone":"138 0000 0001","city":"Shanghai"}},
+  {"source":"crm","id":"c-2","fields":{"name":"Bob Li","email":"bob@example.test","city":"Beijing"}}
+]
