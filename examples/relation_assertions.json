@@ -1,0 +1,50 @@
+[
+  {
+    "assertion_id": "ba",
+    "child": {"source": "crm", "id": "a"},
+    "parent": {"source": "crm", "id": "b"},
+    "score": 5,
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2027-01-01T00:00:00Z"
+  },
+  {
+    "assertion_id": "cb",
+    "child": {"source": "crm", "id": "b"},
+    "parent": {"source": "crm", "id": "c"},
+    "score": 6,
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2027-01-01T00:00:00Z"
+  },
+  {
+    "assertion_id": "ac",
+    "child": {"source": "crm", "id": "c"},
+    "parent": {"source": "crm", "id": "a"},
+    "score": 7,
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2027-01-01T00:00:00Z"
+  },
+  {
+    "assertion_id": "ra",
+    "child": {"source": "crm", "id": "a"},
+    "parent": null,
+    "score": 0,
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2027-01-01T00:00:00Z"
+  },
+  {
+    "assertion_id": "rb",
+    "child": {"source": "crm", "id": "b"},
+    "parent": null,
+    "score": 0,
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2027-01-01T00:00:00Z"
+  },
+  {
+    "assertion_id": "rc",
+    "child": {"source": "crm", "id": "c"},
+    "parent": null,
+    "score": 6,
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2027-01-01T00:00:00Z"
+  }
+]
