@@ -1,0 +1,36 @@
+{
+  "comment": "Fixed interpreter and build-tool pins for the offline release chain. Verify against this file on every run; never substitute a different interpreter or tool version without re-pinning and re-accepting.",
+  "interpreter": {
+    "version_exact": "3.11.2",
+    "version_compatible": "3.11",
+    "platform_machine": "aarch64",
+    "path": "/usr/bin/python3.11",
+    "binary_sha256": "2ceb9199570aaf34a254b9ea88b1d77f38530833e2a12688d002a59c905b51b2"
+  },
+  "build_tools": [
+    {
+      "name": "pip",
+      "version": "23.3.2",
+      "wheel": "pip-23.3.2-py3-none-any.whl",
+      "sha256": "5052d7889c1f9d05224cd41741acb7c5d6fa735ab34e339624a614eaaa7e7d76"
+    },
+    {
+      "name": "setuptools",
+      "version": "68.1.2",
+      "wheel": "setuptools-68.1.2-py3-none-any.whl",
+      "sha256": "3d8083eed2d13afc9426f227b24fd1659489ec107c0e86cec2ffdde5c92e790b"
+    },
+    {
+      "name": "wheel",
+      "version": "0.41.3",
+      "wheel": "wheel-0.41.3-py3-none-any.whl",
+      "sha256": "488609bc63a29322326e05560731bf7bfea8e48ad646e1f5e40d366607de0942"
+    }
+  ],
+  "source_date_epoch": 1700000000,
+  "offline_env": {
+    "PIP_NO_INDEX": "1",
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+    "PIP_NO_CACHE_DIR": "1"
+  }
+}

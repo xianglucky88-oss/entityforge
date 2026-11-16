@@ -1,5 +1,8 @@
 [build-system]
-requires = ["setuptools>=68"]
+# Exact pins, not lower bounds: the offline release chain verifies these
+# wheels against releng/pins.json and never resolves a newer build tool from
+# an index. setuptools 68.1.2 still satisfies the documented setuptools>=68.
+requires = ["setuptools==68.1.2", "wheel==0.41.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -12,5 +15,12 @@ dependencies = []
 [project.scripts]
 entityforge = "entityforge.cli:main"
 
+[tool.setuptools]
+# Releng, tests and examples live next to src/ but are not distribution
+# content; pin discovery to the src layout so extra top-level modules in a
+# build working copy can never be picked up by flat-layout auto-discovery.
+package-dir = {"" = "src"}
+
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["entityforge*"]

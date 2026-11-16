@@ -7,3 +7,8 @@ dist/
 *.sqlite*
 .env
 .DS_Store
+
+# Offline release chain work products: artifacts are promoted into the chosen
+# release root explicitly, never mixed into the source checkout.
+release-work/
+release/
