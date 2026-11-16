@@ -1,0 +1,5 @@
+[{"op": "upsert", "source": "crm", "id": "1",
+  "fields": {"name": "Alice Zhang", "email": "alice@x.test", "city": "SH"}},
+ {"op": "upsert", "source": "support", "id": "2",
+  "fields": {"name": "Alice Zhan", "city": "Shanghai"}},
+ {"op": "delete", "source": "web", "id": "9"}]
